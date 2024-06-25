@@ -1,39 +1,129 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.4;
+    background: #000;
+    color: #fff;
+    background-image: url('https://images.pexels.com/photos/577114/pexels-photo-577114.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #000;
+    color: #f39c12;
     padding: 1rem 0;
     text-align: center;
+    border-bottom: 4px solid #f39c12;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+h1 {
+    margin: 0;
+    text-shadow: 2px 2px 8px #f39c12;
 }
 
-    nav ul li {
-        display: inline;
-        margin: 0 1rem;
-    }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+h2 {
+    margin: 0;
+    padding-bottom: 64px;
+    text-shadow: 2px 2px 8px #f39c12;
+}
 
 section {
     padding: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 1rem;
+    border: 4px solid #f39c12;
+    border-radius: 10px;
 }
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-thumbnail {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid transparent;
+    box-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12;
+    animation: rainbow 5s infinite; /* Rainbow animation */
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+
+    .project-thumbnail:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #f39c12, 0 0 40px #f39c12, 0 0 60px #f39c12;
+    }
+
+@keyframes rainbow {
+    0% {
+        box-shadow: 0 0 10px #f39c12;
+    }
+
+    14.2857% {
+        box-shadow: 0 0 10px #f39c12;
+    }
+
+    28.5714% {
+        box-shadow: 0 0 10px #ff0000;
+    }
+
+    42.8571% {
+        box-shadow: 0 0 10px #ff7f00;
+    }
+
+    57.1428% {
+        box-shadow: 0 0 10px #ffff00;
+    }
+
+    71.4285% {
+        box-shadow: 0 0 10px #00ff00;
+    }
+
+    85.7142% {
+        box-shadow: 0 0 10px #0000ff;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #f39c12;
+    }
+}
+
+nav a {
+    color: #f39c12;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    margin-top: 1rem;
+    border: 2px solid #f39c12;
+    border-radius: 4px;
+    background: #000;
+    box-shadow: 0 0 5px #f39c12;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+    nav a:hover {
+        background: #f39c12;
+        color: #000;
+        box-shadow: 0 0 10px #fff;
+    }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    background: #000;
+    color: #f39c12;
+    border-top: 4px solid #f39c12;
 }
