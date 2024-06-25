@@ -1,14 +1,44 @@
 /* General Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html {
+    height: 100%; /* This ensures the root element stretches along the full height of the viewport */
+    box-sizing: border-box; /* This approach uses the border-box model */
+}
+
 body {
-    font-family: 'Press Start 2P', cursive, sans-serif;
-    margin: 0;
-    padding: 0;
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Press Start 2P', cursive, sans-serif; */
     line-height: 1.4;
-    background: #000;
     color: #fff;
-    background-image: url('https://images.pexels.com/photos/577114/pexels-photo-577114.jpeg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column; /* Aligns children (header, main, footer) in a vertical stack */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+    align-items: stretch;
+}
+
+
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Ensures that padding and borders are included in the width and height */
+}
+
+main {
+    flex: 1; /* This allows the main element to grow and fill available space */
+    overflow: auto; /* Adds scroll to main if content overflows */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0; /* Padding for aesthetic spacing */
+    background-color: #333; /* Styling the footer's background */
+    color: #fff; /* Color for footer text */
 }
 
 header {
@@ -31,6 +61,36 @@ h2 {
 }
 
 section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+
+.left-half, .right-half {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Slight transparency for content backgrounds */
+    border-radius: 10px;
+    color: #fff;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.audio-sample {
+    margin-top: 20px;
+    text-align: center;
+}
+
+audio {
+    width: 100%; /* Full width for better control display */
+}
+
+.content.section {
     padding: 2rem;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
@@ -120,10 +180,35 @@ nav a {
         box-shadow: 0 0 10px #fff;
     }
 
-footer {
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    .left-half, .right-half {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+:root {
+    --video-scale: 0.5; /* 80% of the viewport width */
+}
+
+.object-video {
+    width: calc(100vw * var(--video-scale)); /* Width scaled by the variable */
+    height: calc((100vw * var(--video-scale)) * 9 / 16); /* Maintain 16:9 ratio */
+    display: block;
+    margin: 10px auto;
+}
+
+.subtitle {
+    width: 80%; /* Adjust width as necessary */
+    margin: 0 auto; /* This centers the block */
+    text-align: center; /* This centers the text inside the block */
+}
+
+.centered-title {
     text-align: center;
-    padding: 1rem 0;
-    background: #000;
-    color: #f39c12;
-    border-top: 4px solid #f39c12;
 }

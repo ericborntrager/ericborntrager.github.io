@@ -3,23 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beat Flavor</title>
+    <title>Beat Flavor: Breakfast Boogie</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Beat Flavor: Breakfast Boogie</h1>
-        <nav>
-            <a href="../index.html">Home</a>
-        </nav>
+        <a href="../index.html" class="home-button">Home</a>
     </header>
-    <section id="project-details">
-        <h2>About Project 1</h2>
-        <p>Details about Project 1 go here.</p>
+    <!-- Embed YouTube Video -->
+    <!-- https://youtu.be/yECcqFpN0iY-->
+    <!-- https://youtu.be/embed/yECcqFpN0iY?autoplay=1-->
+
+    <object class="object-video"
+            data="https://www.youtube.com/embed/yECcqFpN0iY?autoplay=1" type="text/html" frameborder="0" allowfullscreen>
+    </object>
+
+    <p class="subtitle">A restaurant themed rhythm game with unique controls and fun music!</p>
+    <section class="content">
+        <div class="left-half">
+            <h1>Programming Contributions</h1>
+            <ul>
+                
+                <li>
+                    Overall audio implementation (Music and SFX)
+                </li>
+                <li>
+                    Utilized FMOD for adaptive audio
+                    <ul>
+                        <li>
+                            Each instrument in a song (i.e. guitar, bass, drums) could be affected separately
+                            <ul>
+                                <li>
+                                    i.e. player error may trigger audio effects such as pitch distortion on the guitar or another instrument
+                                </li>
+                                <li>
+                                    Instruments could be muted/unmuted individually
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Allowed for rhythmically accurate “beat callbacks”
+                            <ul>
+                                <li>
+                                    i.e. unity events could be triggered at the start of a measure or a specific measure/beat in the song
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <!-- More items as needed -->
+            </ul>
+        </div>
+        <div class="right-half">
+            <h1>Audio Contributions</h1>
+            <div class="audio-sample">
+                <h3>Title Theme</h3>
+                <audio controls>
+                    <source src="../audio/BFBB_Title_Music.WAV" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p></p>
+            </div>
+            <div class="audio-sample">
+                <h3>Boogie Bumpin'</h3>
+                <audio controls>
+                    <source src="../audio/Boogie_Bumpin.WAV" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>One of the playable songs from the BFBB OST</p>
+            </div>
+            <!-- Repeat for other audio samples -->
+        </div>
     </section>
     <footer>
-        <p>&copy; 2024 Eric Borntrager</p>
+        © 2024 Eric Borntrager
     </footer>
 </body>
 </html>
