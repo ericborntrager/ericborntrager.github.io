@@ -61,18 +61,30 @@
             <h1>Audio Contributions</h1>
             <div class="audio-sample">
                 <h3>Title Theme</h3>
-                <audio controls>
-                    <source src="../audio/BFBB_Title_Music.WAV" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+                <iframe src="https://drive.google.com/file/d/1alss6abf4uCiFWaBSCHeJ9tvMfMzkqKW/preview" width=100% height="70" allow="autoplay" style="border: none;"></iframe>
+
+                <!-- SoundCloud SDK -->
+                <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+                <script>
+                    // Initialize the SoundCloud SDK
+                    SC.initialize({
+                        client_id: 'GnOdx9VmNzLeR9ljzVJQw5xAWmAOjNfb'
+                    });
+
+                    // Resolve the track URL to get the embed code
+                    SC.oEmbed('https://soundcloud.com/eric-b-874907870/bfbb-title-music/s-84G9SnmnnrD?si=cb36f48e54ee41b8ac68c4d83bff620c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', {
+                        auto_play: false
+                    }).then(function (embed) {
+                        // Insert the embed code into the div
+                        document.getElementById('soundcloud-player').innerHTML = embed.html;
+                    });
+                </script>
+
                 <p></p>
             </div>
             <div class="audio-sample">
                 <h3>Boogie Bumpin'</h3>
-                <audio controls>
-                    <source src="../audio/Boogie_Bumpin.WAV" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+                <iframe src="https://drive.google.com/file/d/1R9T0lqRmRBwqh79qE5x0KbTQfjS8nZLZ/preview" width=100% height="70" allow="autoplay"></iframe>
                 <p>One of the playable songs from the BFBB OST</p>
             </div>
             <!-- Repeat for other audio samples -->
