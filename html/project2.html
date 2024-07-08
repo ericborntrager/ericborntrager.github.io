@@ -3,41 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Beat Flavor: Breakfast Boogie</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Project Title</h1>
+        <h1>Innercity Alchemy</h1>
+        <a href="../index.html" class="home-button">Home</a>
     </header>
-    <video controls>
-        <source src="path/to/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- Embed YouTube Video -->
+    <!-- https://youtu.be/yECcqFpN0iY-->
+    <!-- https://youtu.be/embed/yECcqFpN0iY?autoplay=1-->
+
+    <object class="object-video"
+            data="https://www.youtube.com/embed/yECcqFpN0iY?autoplay=1" type="text/html" frameborder="0" allowfullscreen>
+    </object>
+
+    <p class="subtitle">Run a potion shop in a modern day city! Scavenge for ingredients, combine them to discover new potions and effects, and sell them to grow your business! </p>
     <section class="content">
         <div class="left-half">
-            <h2>Project Contributions</h2>
+            <h1>Programming Contributions</h1>
             <ul>
-                <li>Overview of the project</li>
-                <li>Contribution details</li>
+                
+                <li>
+                    Created an interactions system
+                    <ul>
+                        <li>
+                            Allows player to interact with objects and NPCs
+                            
+                        </li>
+                        <li>
+                            Abstract and able to be implemented for specific use cases. For example:
+                            <ul>
+                                <li>
+                                    Opening an in-game computer
+                                </li>
+                                <li>
+                                    Using an in-game door
+                                </li>
+                                <li>
+                                    Starting dialogue with NPCs
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    Implemented an easily expandable system for the integration of music and SFX
+                </li>
                 <!-- More items as needed -->
             </ul>
         </div>
         <div class="right-half">
-            <h2>Audio Contributions</h2>
+            <h1>Audio Contributions</h1>
             <div class="audio-sample">
-                <h3>Sample Title 1</h3>
-                <audio controls>
-                    <source src="path/to/audio1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                <p>Subtitle information here</p>
+                <h3>City Theme</h3>
+                <iframe src="https://drive.google.com/file/d/1qBqPQl61ze21pMHC3epSyF39U_wr4cyJ/preview" width=100% height="70" allow="autoplay" style="border: none;"></iframe>
+                <p></p>
+            </div>
+            <div class="audio-sample">
+                <h3>Shop Theme</h3>
+                <iframe src="https://drive.google.com/file/d/1F2m6ehF5Z8aCIMvedQDsM-uo9bq7Mfjd/preview" width=100% height="70" allow="autoplay" style="border: none;"></iframe>
+            </div>
+            <div class="audio-sample">
+                <h3>Title Theme</h3>
+                <iframe src="https://drive.google.com/file/d/11BuWXePdZE1y3B_GklMcKtxNtDEkqYYJ/preview" width=100% height="70" allow="autoplay"></iframe>
+                <p></p>
+            </div>
+            <div class="audio-sample">
+                <h3>Sewer Theme</h3>
+                <iframe src="https://drive.google.com/file/d/14mpUoa2BKAPPCX6b8X3QqjuibY3aK3v0/preview" width=100% height="70" allow="autoplay"></iframe>
+                <p></p>
+            </div>
+            <div class="audio-sample">
+                <h3>Boss Theme</h3>
+                <iframe src="https://drive.google.com/file/d/1iiEAn6y3jxG9Bkmui9UIkPj2ksMEX6U6/preview" width=100% height="70" allow="autoplay"></iframe>
+                <p></p>
             </div>
             <!-- Repeat for other audio samples -->
         </div>
     </section>
     <footer>
-        © 2024 Your Name
+        © 2024 Eric Borntrager
     </footer>
 </body>
 </html>
