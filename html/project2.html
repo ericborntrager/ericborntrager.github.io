@@ -52,6 +52,32 @@
                 </li>
                 <li>
                     Implemented an easily expandable system for the integration of music and SFX
+                    <ul>
+                        <li>
+                            Created dictionaries to correspond a key to the directory path of a given sound
+                            <ul>
+                                <li>
+                                    Created one for music and another for SFX
+                                </li>
+                                <li>
+                                    An enum was used to create easily referencable key values for the music and SFX dictionaries
+                                </li>
+                            </ul>
+                            <li>
+                                Created a music event manager script
+                                <ul>
+                                    <li>
+                                        Listened for scene changes and changed music according to the "default track" of a given scene
+                                        <ul>
+                                            <li>
+                                                Default tracks were found by looking them up in a dictionary that corresponded scene name to a key value (enum type)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
                 </li>
                 <!-- More items as needed -->
             </ul>
