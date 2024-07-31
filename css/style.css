@@ -46,17 +46,19 @@ header {
     color: #f39c12;
     padding: 1rem 0;
     text-align: center;
-    border-bottom: 4px solid #f39c12;
+    border-bottom: 4px solid #add8e6;
 }
 
 h1 {
     margin: 0;
-    text-shadow: 2px 2px 8px #f39c12;
+    text-shadow: 2px 2px 8px #50C0F2;
+    color: #FFCDD2; /* Black color */
 }
+
 
 h2 {
     margin: 0;
-    padding-bottom: 64px;
+    padding-bottom: 16px;
     text-shadow: 2px 2px 8px #f39c12;
 }
 
@@ -103,7 +105,7 @@ audio {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 4rem;
+    
 }
 
 .project-link {
@@ -111,8 +113,8 @@ audio {
 }
 
 .project-thumbnail {
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
     background-size: cover;
     background-position: center;
     border: 4px solid transparent;
